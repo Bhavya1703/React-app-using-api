@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 10vh;
+  background: #000000;
+  color: #ffffff;
+  font-family: "Kreon", serif;
+  list-style: none;
+}
+
+nav .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: #ffffff;
+}

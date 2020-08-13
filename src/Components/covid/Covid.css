@@ -1,0 +1,71 @@
+.main-content {
+  background-image: url("../assets/500_F_331001873_c8T80H4hJ3Ag6xYwdSB1pbZpn025Vzbx.jpg");
+}
+.row {
+  font-family: "Kreon", serif;
+  border-bottom: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+.NewConfirmed,
+.NewDeaths,
+.TotalConfirmed,
+.NewDeaths,
+.TotalDeaths,
+.TotalRecovered {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  font-family: "Kreon", serif;
+  font-weight: bold;
+}
+
+.NewConfirmed {
+  color: red;
+}
+.TotalConfirmed {
+  color: black;
+}
+.TotalDeaths {
+  color: red;
+}
+.TotalRecovered {
+  color: rgb(0, 153, 255);
+}
+.NewDeaths {
+  color: black;
+}
+table {
+  border-collapse: 5px separate;
+  width: 80%;
+  margin: 10px auto;
+  border-spacing: 0 8px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+table thead tr {
+  background: black;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+table thead tr th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+table thead tr td {
+  padding: 8px;
+  text-align: center;
+}

@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// import axios from "axios";
+import Nav from "./Components/navbar/Navbar";
+import Weather from "./Components/weather/Weather";
+import Covid from "./Components/covid/Covid";
+import { Route, Switch } from "react-router-dom";
+import GoogleMapReact from "google-map-react";
 
+const Home = () => {
+  return (
+    <div style={{ height: "100vh", width: "100%" }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyCVUJfW6DgL5ZSJYxbq5dN-NTItRmKyEMo" }}
+        defaultCenter={{ lat: 59.95, lng: 30.33 }}
+        defaultZoom={4}
+      ></GoogleMapReact>
+    </div>
+  );
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/covid" component={Covid} />
+        <Route path="/weather" component={Weather} />
+      </Switch>
     </div>
   );
 }
